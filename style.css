@@ -1,3 +1,85 @@
-*{margin: 0; padding: 0;}
+/** @format */
 
- 
+* {
+  margin: 0;
+  padding: 0;
+}
+/* GLOBAL */
+html,
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 16px;
+}
+
+/* line style */
+.line::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 3px;
+  background: #e39a35;
+  transition: all 0.3s;
+}
+
+.line:hover::after {
+  width: 100%;
+}
+
+.line.active::after {
+  width: 100%;
+}
+
+/* END GLOBAL */
+
+/* HEADER */
+.header__content {
+  width: 100%;
+  position: fixed;
+  z-index: 999;
+}
+
+#cvNavBar .navbar-nav .nav-link {
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+.myNavBar .navbar-nav .nav-link a {
+  text-decoration: none;
+}
+
+/* END HEADER */
+
+/* BANNER */
+#banner .banner__content {
+  background-image: url("assets/images/banner.jpg");
+  height: 750px;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: white;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#banner .banner__content p:first-child{
+    font-size: 24px;
+    color: #ffffff;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+
+/* END BANNER */
+
+/* RESPONSIVE */
+
+@media (max-width: 768px) {
+  .header__content .myNavBar .navbar-brand img {
+    width: 80%;
+  }
+  #cvNavBar .navbar-nav .nav-link {
+    font-size: 10px;
+  }
+  #cvNavBar .navbar-nav {
+    text-align: center;
+  }
+}

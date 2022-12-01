@@ -12,44 +12,60 @@
 
 <body>
 	<!--HEADER  -->
-	<header class="header__content">
-		<nav class="navbar navbar-expand-sm navbar-dark bg-dark myNavBar">
-			<div class="container">
-				<a class="navbar-brand" href="#">
-					<img src="assets/images/logo.png" alt="Logo"/>
-				</a>
-				<button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#cvNavBar"
-					aria-controls="cvNavBar" aria-expanded="false" aria-label="Toggle navigation">
-					<span class="navbar-toggler-icon"></span>
-				</button>
-				<div class="collapse navbar-collapse" id="cvNavBar">
-					<ul class="navbar-nav" style="margin-left: auto;">
-						<li class="nav-item active">
-							<a class="nav-link" href="#">Trang chủ </a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="#">Giới Thiệu </a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="#">Kinh Nghiệm</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="#">Sản Phẩm</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="#">Thông Tin Liên Hệ</a>
-						</li>
-					</ul>
+	<header>
+		<div class="header__content">
+			<nav class="navbar navbar-expand-sm navbar-dark bg-dark  myNavBar">
+				<div class="container">
+					<a class="navbar-brand" href="#">
+						<img class="img-fluid" src="assets/images/logo.png" alt="Logo" />
+					</a>
+					<button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse"
+						data-target="#cvNavBar" aria-controls="cvNavBar" aria-expanded="false"
+						aria-label="Toggle navigation">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+					<div class="collapse navbar-collapse" id="cvNavBar">
+						<ul class="navbar-nav" style="margin-left: auto;">
+							<li class="nav-item active line">
+								<a class="nav-link" href="#">Trang chủ </a>
+							</li>
+							<li class="nav-item line">
+								<a class="nav-link" href="#">Giới Thiệu </a>
+							</li>
+							<li class="nav-item line">
+								<a class="nav-link" href="#">Kinh Nghiệm</a>
+							</li>
+							<li class="nav-item line">
+								<a class="nav-link" href="#">Sản Phẩm</a>
+							</li>
+							<li class="nav-item line">
+								<a class="nav-link" href="#">Thông Tin Liên Hệ</a>
+							</li>
+						</ul>
+					</div>
 				</div>
-			</div>
-		</nav>
+			</nav>
+		</div>
 	</header>
 	<!-- END HEADER -->
-	<script type="text/javascript" src="main.js"></script>
+	<!-- BANNER -->
+	<section id="banner">
+		<div class="banner__content">
+			<div>
+				<img src="assets/images/avatar.jpg" alt="avatarTrung" />
+				<p>Hello</p>
+				<h3>I’m Maria Lopez</h3>
+				<p>A Freelance Web DeveloperUI/UX DesignerWordPress DeveloperWeb Designer</p>
+			</div>
+
+		</div>
+		<div class="banner__overplay"></div>
+	</section>
+	<!-- END BANNER -->
 	<script type="text/javascript" src="vendor/jquery-3.3.1.slim.min.js"></script>
+	<script type="text/javascript" src="vendor/popper.min.js"></script>
 	<script type="text/javascript" src="vendor/bootstrap.js"></script>
-
-
+	<script type="text/javascript" src="main.js"></script>
 </body>
 
 </html>
