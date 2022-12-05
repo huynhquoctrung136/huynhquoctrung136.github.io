@@ -7,8 +7,17 @@
 /* GLOBAL */
 html,
 body {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 16px;
+  line-height: 30px;
+  color: #afafaf;
+  font-weight: 400;
+  height: 100%;
+  vertical-align: baseline;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  background-color: #ffffff;
 }
 
 /* line style */
@@ -29,19 +38,55 @@ body {
   width: 100%;
 }
 
+/* HEADING */
+.heading {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+.heading h2 {
+  font-size: 40px;
+  color: #fff;
+  letter-spacing: 0.5px;
+  font-weight: bold;
+}
+
+.heading p {
+  text-transform: capitalize;
+  font-size: 17px;
+  letter-spacing: 2px;
+}
+
+.heading p::after {
+  content: "";
+  display: block;
+  width: 70px;
+  height: 2px;
+  background-color: #fff;
+  margin: auto;
+  margin: 20px auto;
+}
+
+.section {
+  padding: 5rem 0;
+}
+
 /* END GLOBAL */
 
 /* HEADER */
-.header__content {
+header {
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
   width: 100%;
-  position: fixed;
-  z-index: 999;
+  z-index: 10;
 }
 
 #cvNavBar .navbar-nav .nav-link {
   font-size: 14px;
   font-weight: 400;
   text-transform: uppercase;
+  color: #ffffff;
 }
 .myNavBar .navbar-nav .nav-link a {
   text-decoration: none;
@@ -50,9 +95,12 @@ body {
 /* END HEADER */
 
 /* BANNER */
+#banner {
+  position: relative;
+}
 #banner .banner__content {
   background-image: url("assets/images/banner.jpg");
-  height: 750px;
+  height: 650px;
   background-repeat: no-repeat;
   background-position: center;
   color: white;
@@ -60,15 +108,81 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  z-index: 20;
 }
-#banner .banner__content p:first-child{
-    font-size: 24px;
-    color: #ffffff;
-    margin-bottom: 10px;
-    display: inline-block;
+#banner .banner__content .item-img img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 50%;
+}
+
+#banner .banner__content .item-content .item-top-text {
+  font-size: 24px;
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+
+#banner .banner__content .item-content .item-title {
+  color: #ffffff;
+  font-weight: 800;
+  margin-bottom: 0;
+}
+
+#banner .banner__content .item-content .item-description {
+  font-size: 18px;
+  line-height: 48px;
+}
+
+#banner .banner__overplay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: linear-gradient(to top, #111, transparent);
 }
 
 /* END BANNER */
+
+/* ABOUT */
+#about {
+  background-color: #0c1129;
+}
+
+.about__content img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 50%;
+}
+.about__content .item-title {
+  font-size: 26px;
+  line-height: 38px;
+  font-weight: 700;
+  margin-bottom: 5px;
+  color:#fff;
+}
+.about__content .item-subtitle {
+  color: #ffffff;
+  margin-bottom: 20px;
+  font-size: 16px;
+}
+
+.about__content p{
+  margin: 0 0 1.25rem 0;
+  color: #afafaf;
+}
+
+.about__content .personal__info .info__list ul li{
+  list-style: none;
+}
+
+.about__content .personal__info .info__list ul li span{
+  font-weight: 600;
+  color: #ffffff;
+  min-width: 130px;
+  display: inline-block;
+}
+/* END ABOUT */
 
 /* RESPONSIVE */
 
