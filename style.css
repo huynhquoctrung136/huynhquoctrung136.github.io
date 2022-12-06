@@ -159,7 +159,7 @@ header {
   line-height: 38px;
   font-weight: 700;
   margin-bottom: 5px;
-  color:#fff;
+  color: #fff;
 }
 .about__content .item-subtitle {
   color: #ffffff;
@@ -167,22 +167,76 @@ header {
   font-size: 16px;
 }
 
-.about__content p{
+.about__content p {
   margin: 0 0 1.25rem 0;
   color: #afafaf;
 }
 
-.about__content .personal__info .info__list ul li{
+.about__content .personal__info .info__list ul li {
   list-style: none;
 }
 
-.about__content .personal__info .info__list ul li span{
+.about__content .personal__info .info__list ul li span {
   font-weight: 600;
   color: #ffffff;
   min-width: 130px;
   display: inline-block;
 }
 /* END ABOUT */
+
+/* PRODUCT */
+#product {
+  background-color: #0c1129;
+}
+
+.product__col {
+  padding: 15px;
+}
+
+.product__item {
+  box-shadow: 0px 0px 62px 0px rgb(0 0 0 / 6%);
+  text-align: left;
+  padding: 50px 40px;
+  margin-bottom: 30px;
+  background-color: #040920;
+}
+.product__item i {
+  font-size: 45px;
+}
+
+.product__item h3 {
+  font-size: 20px;
+  margin: 25px 0 20px;
+  color: #fff;
+}
+.product__item p {
+  color: #b6b6b6b6;
+  font-size: 14px;
+  letter-spacing: 0.5px;
+}
+.product__item .productItem__list ul li {
+  list-style: none;
+}
+
+.product__item .productItem__list ul li {
+  font-weight: 600;
+  color: #827575;
+  text-align: left;
+  min-width: 30px;
+}
+.product__item .productItem__list ul li i {
+  font-size: 14px;
+}
+
+/* END PRODUCT */
+
+/* PROJECT */
+#project {
+  background-color: #0c1129;
+}
+
+
+/* END PROJECT */
 
 /* RESPONSIVE */
 
